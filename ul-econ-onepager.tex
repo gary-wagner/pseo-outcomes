@@ -1,0 +1,145 @@
+\DocumentMetadata{lang=en-US, pdfstandard=ua-2, testphase={phase-III,table}}
+\documentclass{./template/articlex}
+
+\hypersetup{pdftitle={Why Economics? What UL Lafayette Graduates Actually Earn},
+            pdflang={en-US}}
+
+% --- one-pager formatting -----------------------------------------------
+\usepackage{geometry}
+\geometry{landscape, left=0.55in, right=0.55in, top=0.5in, bottom=0.45in}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage[scaled=0.92]{helvet}
+
+\definecolor{ULRED}{HTML}{CE0E2D}
+\definecolor{INK}{HTML}{222222}
+\definecolor{SOFT}{HTML}{555555}
+
+% hero number with caption underneath
+\newcommand{\stat}[2]{%
+  \begin{minipage}[t]{0.315\linewidth}
+    \vspace{0pt}
+    {\sffamily\bfseries\color{ULRED}\fontsize{24}{26}\selectfont #1}\par\vspace{1pt}
+    {\sffamily\color{SOFT}\fontsize{8.6}{10.2}\selectfont #2}
+  \end{minipage}}
+
+% a job title in the careers panel
+\newcommand{\job}[1]{{\sffamily\color{INK}\fontsize{9}{12}\selectfont #1}\par}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+% ------------------------------------------------------------------------
+
+\begin{document}
+\begin{singlespace}
+
+%% ---------- header -----------------------------------------------------
+{\sffamily\bfseries\color{ULRED}\fontsize{23}{26}\selectfont
+Why Economics? What UL Lafayette Graduates Actually Earn}
+
+\vspace{2pt}
+{\color{ULRED}\rule{\linewidth}{1.5pt}}
+\vspace{4pt}
+
+{\sffamily\color{SOFT}\fontsize{10.5}{13}\selectfont
+The real paychecks of real UL graduates. The U.S.\ Census Bureau matches UL
+Lafayette's own transcript records to the earnings records employers file for
+their workers --- so these are not survey answers, and nobody is missing because
+they declined to reply.}
+
+\vspace{8pt}
+
+%% ---------- three numbers ----------------------------------------------
+\noindent
+\stat{\$105,369}{Median earnings of UL Economics graduates ten years after they
+finish their degree, in January 2026 dollars.}
+\hfill
+\stat{Highest}{Of the seven undergraduate business majors at UL Lafayette, at
+ten years out --- at the median and at the 75th percentile alike.}
+\hfill
+\stat{+48\%}{More than the typical UL Lafayette graduate across every field on
+campus, at the ten-year median.}
+
+\vspace{10pt}
+
+%% ---------- figure beside careers ---------------------------------------
+\noindent
+\begin{minipage}[t]{0.665\linewidth}
+  \vspace{0pt}
+  \includegraphics[width=\linewidth, alt={Bar chart of median and
+  75th-percentile earnings for seven UL Lafayette undergraduate business majors
+  at five and ten years after graduation. Economics leads both measures at ten
+  years, at \$105,369 median and \$141,919 at the 75th percentile; Accounting is
+  next at \$85,829 median.}]%
+  {figures/econ_vs_business_majors_5yrs_10yrs_2026-09-28.pdf}
+
+  \vspace{4pt}
+
+  {\sffamily\color{SOFT}\fontsize{8.3}{10.4}\selectfont
+  \textbf{\color{INK}Median} is the graduate in the middle --- half earned more,
+  half earned less. \textbf{\color{INK}75th percentile} is the graduate
+  three-quarters of the way up: one in four earned at least that much. At five
+  years the business majors look much alike; the gap opens later, which is why
+  the ten-year numbers are the ones worth reading.}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.305\linewidth}
+  \vspace{0pt}
+  \begin{tcolorbox}[colback=ULRED!4, colframe=ULRED, boxrule=0.9pt, arc=2pt,
+                    halign=flush left,
+                    left=8pt, right=8pt, top=6pt, bottom=6pt]
+  {\sffamily\bfseries\color{ULRED}\fontsize{11}{13}\selectfont
+  Where Economics majors actually work}
+
+  \vspace{3pt}
+
+  {\sffamily\color{SOFT}\fontsize{8.6}{10.6}\selectfont\raggedright
+  An Accounting major applies for jobs called ``Accountant.'' Economics does not
+  work that way, and that is the biggest reason students underestimate it.
+  Almost none of these titles contain the word \emph{economist}. All of them
+  hire economics majors.\par}
+
+  \vspace{6pt}
+
+  \job{Financial Analyst}
+  \job{Credit Analyst / Underwriter}
+  \job{Pricing \& Revenue Analyst}
+  \job{Data \& Business Analyst}
+  \job{Market Research Analyst}
+  \job{Management Consultant}
+  \job{Policy Analyst}
+  \job{Economic Consultant}
+  \job{Research Assistant --- Fed, Census, BLS}
+
+  \vspace{5pt}
+
+  {\sffamily\color{SOFT}\fontsize{8.4}{10.4}\selectfont\raggedright
+  Employers are buying the ability to work out what is driving a number and what
+  would happen if something changed --- then explain it to someone who does not
+  want the math. Economics is also a well-worn path into law school.\par}
+  \end{tcolorbox}
+\end{minipage}
+
+\vspace{7pt}
+
+%% ---------- footer ------------------------------------------------------
+{\sffamily\color{SOFT}\fontsize{7.2}{8.6}\selectfont\raggedright
+\textbf{Economics is the red bar}; majors are ordered by ten-year median
+earnings. Covers bachelor's graduates, classes of 2001--2021, who were working
+steadily in the year measured --- Census excludes anyone earning less than
+full-time minimum wage or with two or more quarters of no earnings. Census
+reports program codes finer than UL's degrees, so related codes are grouped
+(Management Information Systems within Management, Taxation within Accounting)
+and weighted by graduate counts; Economics is a single code, so its bars are
+exactly what Census published. Graduates who later earned an MBA, law or
+master's degree still count here, and double majors appear in both bars. These
+figures show what graduates of each major earned, not what the major did for
+them. \textbf{Source:} U.S.\ Census Bureau, Longitudinal Employer--Household
+Dynamics Program, Post-Secondary Employment Outcomes (PSEO), Louisiana file,
+\url{https://lehd.ces.census.gov/data/pseo_experimental.html}; accessed
+September 28, 2026. January 2026 dollars, adjusted with the CPI-U (BLS series
+CUUR0000SA0).\par}
+
+\end{singlespace}
+\end{document}
